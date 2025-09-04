@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Factory Method Pattern – Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <h1>🍔 Factory Method Demo</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#roles">Roles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Design Pattern in Action</h2>
+    <p>Factory Method lets us create objects without exposing the creation logic.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>📖 About Factory Method</h2>
+    <p>
+      The Factory Method Pattern defines an interface for creating objects,
+      but lets subclasses decide which class to instantiate. It helps in
+      decoupling object creation from its usage.
+    </p>
+  </section>
+
+  <!-- Demo -->
+  <section id="demo" class="section demo">
+    <h2>⚡ Try the Demo</h2>
+    <p>Select a role to see the Factory Method in action:</p>
+    <div class="form">
+      <select id="userType"></select>
+      <button id="createBtn">Create Role</button>
+    </div>
+    <div id="output" class="card"></div>
+  </section>
+
+  <!-- Roles -->
+  <section id="roles" class="section roles">
+    <h2>👥 Roles Implemented</h2>
+    <div class="role-grid">
+      <div class="role">
+        <h3>👤 Customer</h3>
+        <p>Places orders and browses the menu.</p>
+      </div>
+      <div class="role">
+        <h3>🚴 Delivery Partner</h3>
+        <p>Delivers food from restaurant to customer.</p>
+      </div>
+      <div class="role">
+        <h3>🏪 Restaurant</h3>
+        <p>Prepares meals and updates the menu.</p>
+      </div>
+      <div class="role">
+        <h3>🌟 Premium Customer</h3>
+        <p>Enjoys faster delivery and premium support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤️ using Factory Method Pattern | Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
